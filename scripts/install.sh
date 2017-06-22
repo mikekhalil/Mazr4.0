@@ -18,7 +18,7 @@ source "utils.sh"
 
 # Install homebrew for mac users if you don't already have it
 # Currently requires some intervention from users (clicking enter)
-if [[ "$OSTYPE" == "linux-gnu" ]]; then 
+if is_mac; then 
     which -s brew 
     if [[ $? != 0 ]]; then 
         install_brew
